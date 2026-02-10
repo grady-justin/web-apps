@@ -1,0 +1,18 @@
+<div class="casino-container">
+  <h1 class="casino-title">Roll the Dice!</h1>
+
+  <%
+    die1 = rand(1..6)
+    die2 = rand(1..6)
+    total = die1 + die2
+  %>
+
+  <p class="die-label">First die is</p>
+  <img src="/images/dice/<%= die1 %>.svg" alt="Die <%= die1 %>" class="die-image">
+  <p class="die-label">Second die is</p>
+  <img src="/images/dice/<%= die2 %>.svg" alt="Die <%= die2 %>" class="die-image">
+
+  <p class="total-label">Total is: <span class="total-value"><%= total %></span></p>
+
+  <a href="/dice" class="roll-again-button">Roll again</a>
+</div>

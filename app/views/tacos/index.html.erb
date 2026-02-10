@@ -1,0 +1,19 @@
+<%
+  fillings = ["Avocados", "Sour Cream", "Salsa", "Cheese"]
+%>
+
+<h1>I love tacos!</h1>
+<p>Tacos are amazing, my favorite Mexican food</p>
+
+<p>Ingredients:</p>
+<ul>
+  <!--
+  <li>Avocadors</li>
+  <li>Sour Cream</li>
+  <li>Salsa</li>
+  -->
+
+  <% for filling in fillings %>
+  <li><%= filling %></li>
+  <% end %>
+</ul>
